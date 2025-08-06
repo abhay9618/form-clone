@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="htmlproject.css"/>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="/action.php">
+        <div >
+            <fieldset>
+                <legend>Personal Details</legend>
+            
+                <div class="personaldetails">
+                    <label for="name">Candidate name: </label>
+                    <input type="text" id="name" placeholder="username">
+                    <br><br>
+
+                    <label for="fthname">Father's Name: </label>
+                    <input type="text" id="fthname" placeholder="Father's Name">
+                    <br><br>
+
+                    <label for="mthname">Mother's Name: </label>
+                    <input type="text" id="mthname" placeholder="Mother's name">
+                    <br><br>
+
+                    <label for="dob">Date of Birth: </label>
+                    <input type="date" id="dob">
+                    <br><br>
+
+                    <label for="idtype">Identity Type: </label>
+                    <select name="idtype" id="idtype">
+                        <option value="">Select</option>
+                        <option value="12thadmmit">12th admit card with photo</option>
+                        <option value="aadhar">Aadhar</option>
+                        <option value="pancard">Pancard</option>
+                    </select>
+                    <br><br>
+
+                    <label for="sex">Gender: </label>
+                    <select name="sex" id="sex">
+                        <option value="select">Select</option>
+                        <option value="other">Other</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    <br><br>
+
+                    <label for="rollnum">Enter Qualifying Examination Roll Number:</label>
+                    <input type="number" id="rollnum">
+                    <br><br>
+
+                </div>           
+            
+            </fieldset>
+        </div>
+
+        <div >
+            <fieldset>
+                <legend>Contact Details</legend>
+
+                <div class="contactdetails">
+                                        
+                    <label for="address">Address: </label>
+                    <input type="text" id="address" placeholder="address">
+                    <br><br>
+
+                    <label for="locality">Locality(Optional): </label>
+                    <input type="text" name="locality" id="locality">
+                    <br><br>
+
+                    <label for="city">City/Town/Village: </label>
+                    <input type="text" id="city" placeholder="City">
+                    <br><br>
+
+                    <label for="state">State/UT: </label>
+                    <select name="state" id="state">
+                        <option value="">Select</option>
+                        <option value="UP">Uttar Pradesh</option>
+                        <option value="MP">Madhya Pradesh</option>
+                        <option value="AP">Arunachal Pradesh</option>
+                        <option value="rj">Rajasthan</option>
+                        <option value="gj">Gujrat</option>
+                        <option value="jk">Jammu Kashmir</option>
+                    </select>
+                    <br><br>
+
+                    <label for="district">District: </label>
+                    <input type="text" id="district" placeholder="District Name">
+                    <br><br>
+
+                    <label for="pincode">Pincode: </label>
+                    <input type="number" id="pincode">
+                    <br><br>
+
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="abc@xy.com">
+                    <br><br>
+
+                    <label for="phn">Mobile Number(+91): </label>
+                    <input type="number" id="phn">
+                    <br><br>
+
+                    <label for="telnum">Land Line No. with STD code or an other contact No.(optional): </label>
+                    <input type="number" name="number" id="telnum" >
+                    <br><br>
+
+                </div>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Choose Password</legend>
+                <div class="pass">
+
+                    <label for="Password">Password: </label>
+                    <input type="password" name="password" id="password">
+                    <br><br>
+
+                    <label for="confpass">Confirm Password: </label>
+                    <input type="password" id="confpass">
+                    <br><br>
+
+                    <label for="Security">Security Question: </label>
+                    <select name="scrtques" id="Security">
+                        <option value="select">Select</option>
+                        <option value="1st">Name your first school</option>
+                        <option value="2nd">Who is your role model</option>
+                        <option value="3rd">Your likes and dislikes</option>
+                    </select>
+                    <br><br>
+
+                    <label for="scrtans">Securoty Answer: </label>
+                    <input type="password" id="scrtans">
+                    <br><br>
+
+                </div>
+            </fieldset>
+        </div>
+
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
