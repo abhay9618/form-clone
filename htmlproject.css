@@ -1,6 +1,43 @@
+#outer {
+    border: 3px solid rgb(136, 16, 98);
+    border-top-width: 30px;
+    padding: 20px 40px 20px 40px;
+}
+
+.arrow {
+    position: relative;
+    left: 94%;
+    color: black;
+    margin: 0px;
+
+    
+}
+
+a {
+    color: rgb(80, 30, 195);
+    text-decoration: none;
+}
+
+#inner {
+    border: 3px solid rgb(22, 116, 168);
+    border-top-width: 30px;
+    padding-bottom: 10px;
+}
+
 h1 {
     text-align: center;
-    color: red;   
+    color: red;
+    position: relative;  
+    margin-top: 0px;
+}
+
+fieldset {
+    width: 80%;
+    /* border: 2px solid rgb(15, 15, 15); */
+    margin-bottom: 0px;
+    margin-top: 0px;
+    position: relative;
+    left: 10%;
 }
 
 legend {
@@ -11,11 +48,14 @@ legend {
     padding-right: 50px;
 }
 
-fieldset {
-    width: 100%;
-    border: 3px solid rgb(117, 117, 220);
-    margin-bottom: 10px;
+.personaldetails, .contactdetails, .pass {
+    display: grid;
+    grid-template-columns: repeat(6,2fr);
+    -ms-grid-column-align: start;
+    grid-gap: 3px;
+    text-align: right;
 }
+
 
 button {
     color: aliceblue;
@@ -28,15 +68,24 @@ button {
     border-radius: 50px;  
     transition: margin 2s ease-in; 
     box-shadow: 2px 2px 2px gray;
+    margin-top: 10px;
 }
 
 button:hover {
     box-shadow: 4px 4px 10px gray;
 }
 
-.personaldetails {
+
+
+/* .personaldetails {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-content: inherit;
-}
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    right: 15%;
+} */
+
+
+
